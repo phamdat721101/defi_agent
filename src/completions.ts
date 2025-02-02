@@ -16,7 +16,7 @@ export const openai = new OpenAI({
   apiKey: process.env["LLM_PROVIDER_API_KEY"] || "",
 });
 
-const MAX_OUTPUT_TOKENS = 70;
+const MAX_OUTPUT_TOKENS = 700;
 
 interface PromptContext extends Record<string, string> {
   agentName: string;
